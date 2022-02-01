@@ -1,0 +1,7 @@
+**/*.png
+*.pyc
+*.pt
+*.mp4
+*.csv
+.python-version
+.DS_Store

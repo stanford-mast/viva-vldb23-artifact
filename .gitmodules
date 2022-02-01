@@ -1,0 +1,9 @@
+[submodule "viva/udfs/CameraTraps"]
+  path = viva/udfs/CameraTraps
+  url = https://github.com/microsoft/CameraTraps.git
+[submodule "viva/udfs/Yolov5_DeepSort_Pytorch"]
+  path = viva/udfs/Yolov5_DeepSort_Pytorch
+  url = https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch
+[submodule "viva/udfs/deep_sort"]
+	path = viva/udfs/deep_sort
+	url = https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch.git

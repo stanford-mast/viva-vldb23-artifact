@@ -1,0 +1,38 @@
+storage:
+    input: 'data/'
+    canary: 'canary/'
+    output: 'output/'
+
+execution:
+    gpu: False
+    proxy_confidence_thresh: 0.0
+    deepface_common_prefix_num_layers: 31
+
+spark:
+    property: {
+      'spark.logConf': 'true',
+      'spark.driver.memory': '15g',
+      'spark.sql.shuffle.partitions': 2,
+      'spark.sql.execution.arrow.pyspark.enabled': 'true',
+      'spark.sql.execution.arrow.pyspark.fallback.enabled': 'true',
+      'spark.sql.execution.arrow.maxRecordsPerBatch': 100,
+      'spark.sql.broadcastTimeout': 2000,
+      'spark.master': 'local[*]',
+      'spark.executorEnv.YOLOv5_VERBOSE': 'false',
+      'spark.executorEnv.TF_CPP_MIN_LOG_LEVEL': '3',
+      'spark.sql.files.maxPartitionBytes': '512m',
+      'spark.driver.maxResultSize': '2g',
+}
+
+ingest:
+    height: 240
+    width: 360
+    fps: 1
+    chunk_size_s: 5
+    start_fraction: 0
+    end_fraction: 1
+
+logging:
+    writetofile: True
+    output: 'analysis/logs'
+    sparkloglevel: 'ERROR'
